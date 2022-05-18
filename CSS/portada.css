@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    padding-top: 2.4%;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: all 1500ms ease-out;
+    background-image: url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/Hakurei.jpg);
+background-position: fixed;
+background-size:contain;
+background-repeat: no-repeat;
+background-color: #0055AE;
+background-position:center;
+}
+@font-face {
+    font-family: sonic;
+    src: url(fuentes/NiseSegaSonic.TTF);
+}
+@font-face {
+    font-family: alagard;
+    src: url(fuentes/alagard.ttf);
+}
+#contenedor{ 
+font-family: 'Acme', sans-serif;
+       
+}
+
+/*------------------------------------------------------------------------carrusel animado---------*/
+
+#animacion{
+    
+    background-color:rgb(20, 0, 196);
+    width:1200px;
+    height: 86px;
+    background-image: url(https://213195.000webhostapp.com/Proyectos/Animacion/imagenes/largo.jpg);
+    background-size: 100% 100%;
+    animation: slider 60s infinite linear;
+    border-radius: 20px 20px 20px;
+    margin:auto;
+}
+@keyframes slider{
+    to{background-position: 1000px;}}
+/*---------------------------------------------------------------Barra de navegacion--------------*/
+    #navegacion{
+  
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+   
+}
+header ul
+{
+    list-style: none;
+    display: flex;
+   
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header ul li:not(:last-child){
+    margin-right: 80px;
+}
+
+header ul li a {
+  color: #fff;
+ text-decoration:none;
+   margin-left: 20px;
+    text-shadow: 2px 2px rgb(rgb(255, 0, 0));
+    font-size: 1.2em;
+      font-family: 'Macondo', cursive;
+
+    
+}
+header ul li a img{
+max-height:30px;
+    
+}
+/*----------------------------------------------------------------Audio de la pagina--------------*/
+#principal{
+    width: 100px;
+    height: 30px;
+    }
+
+/*------------------------------------------------------------titulo grande de la pagina---------*/
+#titular{
+    background-color: #590202;
+    width:1180px;
+    height: 400px;
+    bottom:200px;
+    border-radius: 20px 20px 20px;
+    margin:auto;
+      background: linear-gradient(rgba(255, 187, 0, 0.25),rgba(255, 187, 0, 0.25) ),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/kourindou.png);
+}
+#titular #k{
+    padding-top: 120px;
+}
+#titular h1{
+    padding-left: 90px;
+    font-size: 70px;
+    color:#fff;
+    font-family: alagard;
+  
+}
+/*---------------------------------------------------------------carrusel de botones(general)----------*/
+.slides {
+    width: 609px;   height: 420px;
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 10px;
+    border-radius: 20px 20px 20px;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-touch-callout: none;
+
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; } 
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px; height: 420px;
+    display: block; 
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+/*----------------------------------------------------------carrusel(programacion de botones)---------*/
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 20px;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #fff;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "varela round",sans-serif;
+    background-color: rgba(255,255,255,.3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+
+}
+/*--------------------------------------------------------------------------imagenes del carrusel-------*/
+#fan{
+    background-image: url(../IMAGENES/ANIME.jpg);
+    border-radius: 20px 20px 20px;
+}
+#fan h2{
+      margin: 1em;
+    padding-left: 25%;
+     padding-top: 40%;
+  
+    color: #fff;
+    font-size:60px ;
+}
+#origen{
+    background-image: url(../IMAGENES/COLABORACIONES.jpg);
+    border-radius: 20px 20px 20px;
+}
+#origen h2{
+        padding-left: 25%;
+     padding-top: 40%;
+  
+    color: #fff;
+    font-size:60px ;
+    margin: 1em;
+}
+#colab{
+    background-image: url(../IMAGENES/ORQUESTA.jpg);
+    border-radius: 20px 20px 20px;
+}
+#colab h2{
+       padding-left: 10%;
+     padding-top: 40%;
+  
+    color: #fff;
+    font-size:60px ;
+    margin: 1em;
+}
+
+/*-------------------------------------------------------------------------------hover del carrusel--------*/
+.slide:hover + .nav label {opacity: 0.5; 
+    border-radius: 20px 20px 20px;}
+
+.nav label:hover {opacity: 1;
+    border-radius: 20px 20px 20px;}
+
+.nav .next {right: 0;
+    border-radius: 20px 20px 20px;}
+.nav .prev {left: 0;
+    border-radius: 20px 20px 20px;}
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px 20px 20px;
+
+}
+input:checked + .slide-container .nav label {display: block;}
+.nav-dots {
+    width: 100px;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding-left: 15em;
+    
+    
+}
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.8);
+    
+}
+
+input#img-1:checked~ .nav-dots label#img-dot-1,
+input#img-2:checked~ .nav-dots label#img-dot-2,
+input#img-3:checked~ .nav-dots label#img-dot-3{
+    background: rgba(0,0,0,0.8);
+    
+}
+
+
+/*-------------------------------------------------------------------------------nav---------------*/
+nav h1{
+    color:white;
+    text-shadow: 2px 2px rgb(255,0,0);
+    font-family:alagard;
+    text-align:center;
+}
+nav:hover>.capa {
+    
+visibility: visible;
+    opacity: 1;
+    border-radius: 1em 1em 1em;
+    padding: 0.5em 5em;
+    margin:auto;
+    color:white;
+    text-shadow: 2px 2px rgb(255,0,0);
+    text-align:center;
+}
+/*----------------------------------------------------------------------------div akatsuki--------*/
+#akatsuki:hover> .capa{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+    /*--------------------------------------------------------------------articulo de los div-----*/
+article{
+    width: 1180px;
+     border-radius: 1em 1em 1em;
+    padding-top: 5%;
+    margin:auto;
+    position: center;
+    height:345px;
+}
+article h1{
+    text-align:center;
+    background-color:rgba(0,100,200,0.6);
+    border-radius:1em 1em 1em;
+     margin: auto;
+     color:white;
+     text-shadow: 2px 2px rgb(255,0,0);
+}
+
+/*--------------------------------------------------------------------------hover de divs-----*/
+.ss .capa{
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 138, 0.522) ;
+    border-radius: 1em 1em 1em;
+    margin:auto;
+
+    padding-left:23%;
+}
+.ss{
+    width: 90%;
+    border-radius: 1em 1em 1em;
+    margin: auto;
+   
+}
+/*-------------------------------------------------------------------------pie de pagina-----*/
+footer{
+        width: 100%;
+      
+       background-position:center;
+    
+       margin-top:8em;
+       padding-top:4em;
+       padding-bottom:8em;
+
+}
+
+footer h1{
+    color:white;
+    text-shadow: 2px 2px rgb(255,0,0);
+    font-family:sonic;
+    text-align:center;
+}
+

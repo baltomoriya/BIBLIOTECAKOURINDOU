@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+body{
+    padding-top: 2.4%;
+    width: 1000px;
+    transition: all 1500ms ease-out;
+     background:linear-gradient(rgba(50, 138, 186, 0.6),rgba(50, 138, 186, 0.6)),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/Hakurei.jpg) center fixed;
+     margin:auto;
+}
+
+article{
+      margin-top:1em;
+      background-color:rgb(50,139,186);
+      border-radius:1em 1em 1em;
+      text-align:center;
+        padding-bottom:1em;
+        font-family: 'Acme', sans-serif;
+    
+}
+@font-face {
+    font-family: sonic;
+    src: url(fuentes/NiseSegaSonic.TTF);
+}
+@font-face {
+    font-family: alagard;
+    src: url(fuentes/alagard.ttf);
+}
+/*------------------------------------------------------------------------carrusel animado---------*/
+
+#animacion{
+    
+    background-color:rgb(20, 0, 196);
+    width:1000px;
+    height: 86px;
+    background-image: url(https://213195.000webhostapp.com/Proyectos/Animacion/imagenes/largo.jpg);
+    background-size: 100% 100%;
+    animation: slider 60s infinite linear;
+    border-radius: 20px 20px 20px;
+}
+@keyframes slider{
+    to{background-position: 1000px;}}
+/*---------------------------------------------------------------Barra de navegacion--------------*/
+    #navegacion{
+  
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-left: 3em;
+}
+header ul
+{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header ul li:not(:last-child){
+    margin-right: 100px;
+}
+
+header ul li a {
+  color: #fff;
+ text-decoration:none;
+   margin-left: 20px;
+    text-shadow: 2px 2px rgb(rgb(255, 0, 0));
+    font-size: 1.2em;
+    
+    font-family: 'Macondo', cursive;
+
+    
+}
+header ul li a img{
+max-height:30px;
+    
+}
+/*----------------------------------------------------------------Audio de la pagina--------------*/
+#principal{
+    width: 100px;
+    height: 30px;
+    }
+        #musica{
+            background:linear-gradient(rgba(50, 138, 186, 0.7),rgba(150, 108, 186, 0.3)),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/ORQUESTA.jpg)  center;
+         background-size:800px;
+         color:yellow;
+         text-shadow:2px 2px rgb(255,0,0);
+    }
+    #musica h1{
+           color:white;
+       }
+       #musica h2{
+           color:white;
+       }
+    
+    #anime{
+        margin-bottom:5em;
+            background:linear-gradient(rgba(50, 138, 186, 0.7),rgba(150, 108, 186, 0.3)),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/badapple.gif)  center;
+         background-size:800px;
+         color:yellow;
+         text-shadow:2px 2px rgb(255,0,0);
+    }
+      #anime h1{
+           color:white;
+       }
+       #anime h2{
+           color:white;
+       }
+       #anime p{
+           color:skyblue;
+       }
+    #juegos{
+         background:linear-gradient(rgba(50, 138, 186, 0.7),rgba(150, 108, 186, 0.3)),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/skyarena.jpg)  center;
+         background-size:800px;
+         color:yellow;
+         text-shadow:2px 2px rgb(255,0,0);
+         
+    }
+       #juegos h1{
+           color:white;
+       }
+        

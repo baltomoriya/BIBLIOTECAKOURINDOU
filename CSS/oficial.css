@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+@font-face {
+    font-family: sonic;
+    src: url(fuentes/NiseSegaSonic.TTF);
+}
+@font-face {
+    font-family: alagard;
+    src: url(fuentes/alagard.ttf);
+}
+body{
+    padding-top: 2.4%;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(4, 217, 255);
+    margin:auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: all 1500ms ease-out;
+     font-family: alagard;
+     background:linear-gradient(rgba(4, 217, 255, 0.6),rgba(4, 217, 255, 0.6)),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/danmaku.jpg) fixed;
+     background-size: 300px;
+     text-shadow: 2px 2px rgb(255, 0, 0);
+}
+
+
+#windows div img{
+    position:relative  ;
+    max-width:300px;
+    opacity: 0.8;
+    border-radius:1em 1em 1em;
+}
+#personajes{
+    margin-top: 1em;
+background-color: #fff  ;
+border-radius: 1em 1em 1em;
+position: center   ;
+text-align: center  ;
+margin-left:35% ;
+color:black;
+ width: 300px;
+    
+}
+#personajes img{
+    max-width: 250px;
+    position: relative;
+    
+    
+    opacity: 0.5;
+    border-radius:1em 1em 1em;
+}
+#personajes a{
+    font-family: alagard;
+}
+/*------------------------------------------------------------------------carrusel animado---------*/
+#animacion{
+    
+    background-color:rgb(20, 0, 196);
+    width:1000px;
+    height: 86px;
+    background-image: url(https://213195.000webhostapp.com/Proyectos/Animacion/imagenes/largo.jpg);
+    background-size: 100% 100%;
+    animation: slider 60s infinite linear;
+    border-radius: 20px 20px 20px;
+}
+@keyframes slider{
+    to{background-position: 1000px;}}
+/*---------------------------------------------------------------Barra de navegacion--------------*/
+    #navegacion{
+  
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-left: 3em;
+}
+header ul
+{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header ul li:not(:last-child){
+    margin-right: 100px;
+}
+
+header ul li a {
+  color: #fff;
+ text-decoration:none;
+   margin-left: 20px;
+    text-shadow: 2px 2px rgb(rgb(255, 0, 0));
+    font-size: 1.2em;
+    
+    font-family: 'Macondo', cursive;
+
+    
+}
+header ul li a img{
+max-height:30px;
+    
+}
+/*----------------------------------------------------------------Audio de la pagina--------------*/
+#principal{
+    width: 100px;
+    height: 30px;
+    }
+
+    main{
+        background-color: blue;
+        color: #fff;
+        border-radius: 1em 1em 1em; 
+        background:linear-gradient(rgba(50, 138, 186, 0.6),rgba(50, 138, 186, 0.6)),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/Hakurei.jpg) center fixed;
+        margin-bottom:1em;
+        
+    }
+  
+main h1{
+    padding: auto;
+    text-align: center;
+}
+    #right div{
+        background-color: black;
+        width: 300px;
+        margin-left: 1em;
+        padding: auto;
+        
+        color: #fff;
+        border-radius: 1em 1em 1em;
+    }
+    #windows div{
+        padding-left: 3%; 
+        padding-right: 20%;
+    }
+   
+
+    article{
+        background-color: rgb(0, 0, 0);
+        font-family: alagard;
+        text-shadow: 2px 2px rgb(rgb(255, 0, 0));
+        
+    }
+    article div{
+        margin: auto;
+        color:aqua;
+    }
+   
+ #windows h1{
+text-align: left;
+ font-family: 'Macondo', cursive;
+ padding-left:7%;
+ }
+    #right {
+         text-shadow: 2px 2px rgb(255, 0, 0);
+        float: right;
+        text-align:center;
+        font-family: 'Macondo', cursive;
+        color: azure;
+        padding-right: 2%;
+       margin-right: 3%;
+        background: linear-gradient(rgba(255, 187, 0, 0.25),rgba(255, 187, 0, 0.25) ),url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/hisouten.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 1em 1em 1em;
+      width:350px;
+      padding-bottom:1em ;
+      
+       
+    }
+#right div{
+    text-align: justify;
+
+    opacity:10;
+}
+
+
+    #PC98{
+        text-align:center ;
+        background-image: url(https://213195.000webhostapp.com/Proyectos/TOUHOUPROJECTFINAL/IMAGENES/pc98.jpg);
+          background-size: 150px;
+          border-radius: 1em 1em 1em;
+          color:#f00;
+          text-shadow: 2px 2px rgb(0, 0, 0);
+    }
+    #PC98 div{
+      background-color:rgba(138, 0, 0, 0.522);
+      width:400px;
+      color:white;
+    margin: auto;
+      border-radius: 1em 1em 1em;
+    }
+   #cd{ border-radius: 1em 1em 1em;
+   padding-top:2em;
+   padding-bottom:2em;
+       
+   }
+#cd img{
+    max-width:400px;
+    position:relative;
+    border-radius: 1em 1em 1em;
+    
+}
+#cd h1{
+    color:#fff;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+}
+#manga h1{
+    color:#fff;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+}
+#libro {
+     border-radius: 1em 1em 1em;
+     padding-bottom:2em;
+}
+#libro h1{
+    color:#fff;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    
+}
+#libro img{
+       margin-top: 1em;
+        border-radius: 1em 1em 1em;
+}
+#manga{
+     border-radius: 1em 1em 1em;
+     padding-bottom:2em;
+}
+#manga img{
+    max-height: 300px;
+    border-radius: 1em 1em 1em;
+    margin-top: 1em;
+   
+}
+    footer{
+        text-align: center;
+
+    }
+
